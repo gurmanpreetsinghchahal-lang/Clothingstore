@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Clothing Store — Samana, Punjab | Trendy Fashion & Quality Clothing</title>
+<meta name="description" content="The Clothing Store in Samana, Punjab — rated 5.0★ by 9 customers. Trendy styles, quality fabrics and a friendly shopping experience. Visit us at Sekhon Complex, near Tehsil Road, Samana.">
+<meta name="theme-color" content="#16151a">
+<meta name="author" content="The Clothing Store">
+
+<meta property="og:title" content="The Clothing Store — Samana, Punjab">
+<meta property="og:description" content="Trendy styles, quality fabrics. Rated 5.0★ by 9 customers in Samana, Punjab.">
+<meta property="og:type" content="business.business">
+<meta property="og:locale" content="en_IN">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============ RESET & TOKENS ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#16151a;
+  --ink-soft:#33313a;
+  --muted:#6f6a76;
+  --cream:#faf7f3;
+  --sand:#f0e9df;
+  --line:#e4dcd1;
+  --accent:#b07d4a;
+  --accent-dark:#8d6136;
+  --gold:#c9a227;
+  --green:#22c55e;
+  --red:#ef4444;
+  --white:#ffffff;
+  --radius:16px;
+  --radius-sm:10px;
+  --max:1180px;
+  --shadow:0 18px 50px -22px rgba(22,21,26,.35);
+  --shadow-sm:0 8px 26px -14px rgba(22,21,26,.3);
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --ease:cubic-bezier(.2,.6,.2,1);
+}
+html{scroll-behavior:smooth;scroll-padding-top:90px;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);
+  color:var(--ink-soft);
+  background:var(--cream);
+  line-height:1.7;
+  font-size:16px;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+body.locked{overflow:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+ul{list-style:none}
+input,textarea{font:inherit;color:inherit}
+::selection{background:var(--accent);color:#fff}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
+  outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;
+}
+
+/* ============ LAYOUT HELPERS ============ */
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:22px}
+.section{padding:clamp(64px,9vw,120px) 0}
+.center{text-align:center}
+
+h1,h2,h3,h4{font-family:var(--serif);color:var(--ink);line-height:1.18;font-weight:600;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,4vw,3rem)}
+h3{font-size:clamp(1.15rem,2vw,1.35rem)}
+p{font-weight:400}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--sans);
+  font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--accent-dark);margin-bottom:18px;
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--accent);display:block;flex:none}
+.eyebrow.centered::after{content:"";width:34px;height:1px;background:var(--accent);display:block;flex:none}
+
+.lede{font-size:1.05rem;color:var(--muted);max-width:60ch}
+.section-head{max-width:720px;margin-bottom:clamp(38px,5vw,58px)}
+.section-head.center{margin-inline:auto}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 28px;border-radius:100px;
+  font-size:.88rem;font-weight:600;letter-spacing:.03em;
+  transition:transform .25s ease,box-shadow .25s ease,background .25s ease,color .25s ease,border-color .25s ease;
+  white-space:nowrap;border:1px solid transparent;cursor:pointer;
+}
+.btn svg{width:15px;height:15px;flex:none}
+.btn-primary{background:var(--ink);color:var(--cream);box-shadow:var(--shadow-sm)}
+.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 16px 32px -14px rgba(141,97,54,.7)}
+.btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:#fff;color:var(--ink);border-color:#fff;transform:translateY(-2px)}
+.btn-outline{border:1px solid var(--line);color:var(--ink);background:var(--white)}
+.btn-outline:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn-wa{background:#25D366;color:#fff}
+.btn-wa:hover{background:#1eb85a;transform:translateY(-2px);box-shadow:0 16px 32px -14px rgba(37,211,102,.6)}
+.btn-block{width:100%}
+
+/* ============ HEADER / NAV ============ */
+.header{
+  position:fixed;inset:0 0 auto 0;z-index:100;
+  padding:16px 0;
+  transition:background .35s ease,box-shadow .35s ease,padding .35s ease,border-color .35s ease;
+  border-bottom:1px solid transparent;
+}
+.header.scrolled{
+  background:rgba(250,247,243,.92);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  padding:10px 0;
+  border-bottom-color:var(--line);
+  box-shadow:0 6px 24px -20px rgba(0,0,0,.5);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;flex:none}
+.brand-mark{
+  width:42px;height:42px;border-radius:12px;flex:none;
+  background:linear-gradient(140deg,var(--ink),#3b3540);
+  color:var(--cream);display:grid;place-items:center;
+  font-family:var(--serif);font-size:1rem;font-weight:700;letter-spacing:.02em;
+  transition:background .35s ease;
+}
+.header.scrolled .brand-mark{background:linear-gradient(140deg,var(--accent-dark),var(--accent))}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-name{font-family:var(--serif);font-size:1.06rem;font-weight:600;color:#fff;transition:color .35s ease}
+.brand-sub{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.7);transition:color .35s ease}
+.header.scrolled .brand-name{color:var(--ink)}
+.header.scrolled .brand-sub{color:var(--muted)}
+
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{
+  font-size:.85rem;font-weight:500;letter-spacing:.02em;
+  color:rgba(255,255,255,.86);position:relative;transition:color .3s ease;padding:4px 0;
+}
+.header.scrolled .nav-links a{color:var(--ink-soft)}
+.nav-links a::after{
+  content:"";position:absolute;left:0;bottom:-2px;height:1.5px;width:0;
+  background:var(--accent);transition:width .3s ease;
+}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-links a:hover,.nav-links a.active{color:var(--accent)}
+
+.nav-cta{display:flex;align-items:center;gap:12px}
+.nav-phone{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.83rem;font-weight:600;
+  padding:11px 20px;border-radius:100px;
+  background:rgba(255,255,255,.14);color:#fff;
+  border:1px solid rgba(255,255,255,.28);
+  transition:all .3s ease;white-space:nowrap;
+}
+.nav-phone:hover{background:#fff;color:var(--ink);border-color:#fff}
+.header.scrolled .nav-phone{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.header.scrolled .nav-phone:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+
+.burger{
+  display:none;width:44px;height:44px;border-radius:12px;
+  align-items:center;justify-content:center;flex-direction:column;gap:5px;
+  border:1px solid rgba(255,255,255,.3);transition:all .3s ease;flex:none;
+}
+.header.scrolled .burger{border-color:var(--line);background:var(--white)}
+.burger span{width:18px;height:1.8px;background:#fff;border-radius:2px;transition:.3s ease}
+.header.scrolled .burger span{background:var(--ink)}
+.burger.open span:nth-child(1){transform:translateY(6.8px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0;transform:scaleX(.4)}
+.burger.open span:nth-child(3){transform:translateY(-6.8px) rotate(-45deg)}
+
+/* Mobile drawer */
+.drawer{
+  position:fixed;inset:0;z-index:99;
+  background:var(--cream);
+  padding:104px 26px 34px;
+  display:flex;flex-direction:column;
+  transform:translateY(-100%);opacity:0;pointer-events:none;
+  transition:transform .45s cubic-bezier(.4,0,.2,1),opacity .3s ease;
+  overflow-y:auto;
+}
+.drawer.open{transform:translateY(0);opacity:1;pointer-events:auto}
+.drawer nav{display:flex;flex-direction:column}
+.drawer nav a{
+  font-family:var(--serif);font-size:1.55rem;color:var(--ink);
+  padding:15px 0;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.drawer nav a::after{
+  content:"→";font-family:var(--sans);font-size:1rem;color:var(--accent);
+  transition:transform .3s ease;
+}
+.drawer nav a:hover::after{transform:translateX(4px)}
+.drawer-foot{margin-top:auto;padding-top:30px;display:flex;flex-direction:column;gap:12px}
+.drawer-foot p{font-size:.84rem;color:var(--muted);text-align:center;line-height:1.6}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;min-height:100svh;display:flex;align-items:center;
+  padding:130px 0 90px;
+  background:
+    linear-gradient(115deg, rgba(18,17,22,.92) 0%, rgba(18,17,22,.7) 45%, rgba(18,17,22,.42) 100%),
+    url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1900&q=80') center/cover no-repeat,
+    #1a1820;
+  color:#fff;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:160px;
+  background:linear-gradient(to top, var(--cream), transparent);
+  pointer-events:none;z-index:1;
+}
+.hero-inner{position:relative;z-index:2;max-width:760px}
+.hero h1{
+  color:#fff;font-size:clamp(2.5rem,6.4vw,4.6rem);
+  line-height:1.06;letter-spacing:-.02em;margin-bottom:22px;
+}
+.hero h1 em{font-style:italic;color:#e6c48f}
+.hero p{
+  color:rgba(255,255,255,.82);font-size:clamp(1rem,1.6vw,1.12rem);
+  max-width:52ch;margin-bottom:34px;font-weight:300;
+}
+.hero p strong{color:#fff;font-weight:600}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:44px}
+
+.hero-rating{
+  display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;
+  padding:12px 20px;border-radius:100px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.16);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+.hero-rating .score{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:#fff;line-height:1}
+.hero-rating .sep{width:1px;height:22px;background:rgba(255,255,255,.22)}
+.hero-rating .meta{font-size:.8rem;color:rgba(255,255,255,.75);letter-spacing:.02em}
+.stars{display:inline-flex;gap:2px;color:var(--gold)}
+.stars svg{width:15px;height:15px;fill:currentColor}
+
+/* ============ QUICK INFO STRIP ============ */
+.strip{background:var(--ink);color:rgba(255,255,255,.85)}
+.strip-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.strip-item{
+  padding:30px 26px;display:flex;align-items:flex-start;gap:15px;
+  border-right:1px solid rgba(255,255,255,.1);
+}
+.strip-item:last-child{border-right:0}
+.strip-item svg{width:20px;height:20px;color:var(--accent);flex:none;margin-top:3px;stroke-width:1.8}
+.strip-item .k{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:4px}
+.strip-item .v{font-size:.92rem;font-weight:500;color:#fff;line-height:1.5}
+.strip-item a.v:hover{color:var(--accent)}
+.status-dot{
+  display:inline-block;width:7px;height:7px;border-radius:50%;
+  background:var(--green);margin-right:7px;vertical-align:middle;
+  box-shadow:0 0 0 4px rgba(34,197,94,.16);
+  transition:background .3s,box-shadow .3s;
+}
+.status-dot.closed{background:var(--red);box-shadow:0 0 0 4px rgba(239,68,68,.16)}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}
+.about-media{position:relative}
+.about-media img{
+  width:100%;height:100%;max-height:540px;object-fit:cover;
+  border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.about-media .badge{
+  position:absolute;left:-18px;bottom:34px;
+  background:var(--white);border-radius:var(--radius-sm);
+  padding:18px 22px;box-shadow:var(--shadow-sm);
+  border:1px solid var(--line);
+}
+.about-media .badge .n{font-family:var(--serif);font-size:1.9rem;font-weight:700;color:var(--ink);line-height:1}
+.about-media .badge .l{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+
+.about-copy p + p{margin-top:18px}
+.about-list{margin-top:30px;display:grid;gap:14px}
+.about-list li{display:flex;gap:12px;align-items:flex-start;font-size:.94rem}
+.about-list svg{width:19px;height:19px;color:var(--accent-dark);flex:none;margin-top:4px;stroke-width:2.2}
+
+/* ============ FEATURES ============ */
+.features{background:var(--sand);position:relative}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.feature{
+  background:var(--white);border-radius:var(--radius);
+  padding:34px 28px;border:1px solid var(--line);
+  transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;
+}
+.feature:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#d9cdbb}
+.feature-icon{
+  width:52px;height:52px;border-radius:14px;display:grid;place-items:center;
+  background:linear-gradient(140deg,#f6ece0,#efe0cc);color:var(--accent-dark);
+  margin-bottom:20px;
+}
+.feature-icon svg{width:23px;height:23px;stroke-width:1.8}
+.feature h3{margin-bottom:10px}
+.feature p{font-size:.92rem;color:var(--muted)}
+
+/* ============ GALLERY ============ */
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:200px;gap:14px;
+}
+.g-item{
+  position:relative;overflow:hidden;border-radius:var(--radius);
+  background:var(--sand);
+}
+.g-item img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .8s cubic-bezier(.2,.6,.2,1);
+}
+.g-item::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(18,17,22,.4),transparent 60%);
+  opacity:0;transition:opacity .4s ease;
+}
+.g-item:hover img{transform:scale(1.07)}
+.g-item:hover::after{opacity:1}
+.g-item.tall{grid-row:span 2}
+.g-item.wide{grid-column:span 2}
+
+/* ============ REVIEWS ============ */
+.reviews{background:var(--ink);color:rgba(255,255,255,.82);position:relative;overflow:hidden}
+.reviews::before{
+  content:"";position:absolute;top:-140px;right:-120px;width:420px;height:420px;
+  border-radius:50%;background:radial-gradient(circle,rgba(176,125,74,.22),transparent 70%);
+  pointer-events:none;
+}
+.reviews h2{color:#fff}
+.reviews .eyebrow{color:#e0b483}
+.reviews .eyebrow::before,.reviews .eyebrow::after{background:var(--accent)}
+.reviews .lede{color:rgba(255,255,255,.65)}
+
+.review-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:32px;flex-wrap:wrap;margin-bottom:46px;position:relative;z-index:2;
+}
+.score-block{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.score-big{font-family:var(--serif);font-size:4.2rem;font-weight:700;color:#fff;line-height:.9}
+.score-meta{display:flex;flex-direction:column;gap:5px}
+.score-meta .stars svg{width:17px;height:17px}
+.score-meta span{font-size:.85rem;color:rgba(255,255,255,.6)}
+
+.review-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:22px;position:relative;z-index:2;
+}
+.review-card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--radius);padding:30px 28px;
+  display:flex;flex-direction:column;gap:16px;
+  transition:background .35s ease,transform .35s ease,border-color .35s ease;
+}
+.review-card:hover{background:rgba(255,255,255,.09);transform:translateY(-5px);border-color:rgba(255,255,255,.2)}
+.review-quote{font-family:var(--serif);font-size:1.15rem;color:#fff;line-height:1.55;font-style:italic}
+.reviewer{display:flex;align-items:center;gap:13px;margin-top:auto;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}
+.avatar{
+  width:42px;height:42px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-family:var(--serif);font-weight:700;font-size:.95rem;color:var(--ink);
+  background:linear-gradient(140deg,#e9c99a,#c9a06a);
+}
+.reviewer .name{font-size:.9rem;font-weight:600;color:#fff;line-height:1.3}
+.reviewer .when{font-size:.74rem;color:rgba(255,255,255,.5)}
+.owner-reply{
+  margin-top:4px;padding:14px 16px;border-radius:var(--radius-sm);
+  background:rgba(176,125,74,.14);
+  border-left:2px solid var(--accent);
+  font-size:.84rem;color:rgba(255,255,255,.75);line-height:1.6;
+}
+.owner-reply b{color:#e0b483;font-weight:600;display:block;margin-bottom:4px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+
+/* ============ ENQUIRY FORM ============ */
+.enquiry{background:var(--sand)}
+.enquiry-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(32px,5vw,64px);align-items:start}
+
+.form-card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(26px,3.6vw,40px);box-shadow:var(--shadow-sm);
+}
+.field{margin-bottom:18px}
+.field label{
+  display:block;font-size:.75rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:8px;
+}
+.field input,.field textarea{
+  width:100%;padding:14px 16px;border-radius:var(--radius-sm);
+  border:1px solid var(--line);background:var(--cream);
+  font-size:.94rem;
+  transition:border-color .25s ease,background .25s ease,box-shadow .25s ease;
+}
+.field input::placeholder,.field textarea::placeholder{color:#a8a2ad}
+.field input:focus,.field textarea:focus{
+  outline:none;border-color:var(--accent);
+  background:#fff;box-shadow:0 0 0 4px rgba(176,125,74,.12);
+}
+.field textarea{resize:vertical;min-height:110px;line-height:1.6}
+.field.error input,.field.error textarea{border-color:var(--red);background:#fff5f5}
+.field .err{display:none;font-size:.78rem;color:var(--red);margin-top:6px;font-weight:500}
+.field.error .err{display:block}
+
+.form-note{font-size:.79rem;color:var(--muted);margin-top:14px;text-align:center;line-height:1.6}
+.form-success{
+  display:none;padding:16px 18px;border-radius:var(--radius-sm);
+  background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.35);
+  color:#15803d;font-size:.88rem;font-weight:500;margin-bottom:18px;
+  align-items:center;gap:10px;
+}
+.form-success.show{display:flex}
+.form-success svg{width:18px;height:18px;flex:none}
+
+.contact-alt{display:flex;flex-direction:column;gap:16px}
+.alt-card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;display:flex;gap:16px;align-items:center;
+  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+}
+.alt-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);border-color:#d9cdbb}
+.alt-card .ico{
+  width:48px;height:48px;border-radius:13px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(140deg,#f6ece0,#efe0cc);color:var(--accent-dark);
+}
+.alt-card .ico.wa{background:rgba(37,211,102,.12);color:#128C4A}
+.alt-card .ico svg{width:21px;height:21px;stroke-width:1.8}
+.alt-card .t{font-size:.95rem;font-weight:600;color:var(--ink);line-height:1.35}
+.alt-card .s{font-size:.8rem;color:var(--muted);margin-top:2px}
+
+/* ============ VISIT / CONTACT ============ */
+.visit-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(30px,4vw,54px);align-items:stretch}
+.visit-card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(28px,4vw,42px);box-shadow:var(--shadow-sm);
+  display:flex;flex-direction:column;gap:26px;
+}
+.info-row{display:flex;gap:16px;align-items:flex-start}
+.info-row .ico{
+  width:44px;height:44px;border-radius:12px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(140deg,#f6ece0,#efe0cc);color:var(--accent-dark);
+}
+.info-row .ico svg{width:19px;height:19px;stroke-width:1.8}
+.info-row .k{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.info-row .v{font-size:.96rem;color:var(--ink);font-weight:500;line-height:1.55;display:block}
+.info-row a.v:hover{color:var(--accent-dark);text-decoration:underline;text-underline-offset:3px}
+.info-row .sub{font-size:.82rem;color:var(--muted);font-weight:400;margin-top:3px}
+.visit-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+
+.map-frame{
+  border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+  min-height:380px;height:100%;box-shadow:var(--shadow-sm);background:var(--sand);
+  position:relative;
+}
+.map-frame iframe{width:100%;height:100%;min-height:380px;border:0;display:block;filter:grayscale(.18) contrast(1.03)}
+.map-note{
+  position:absolute;left:14px;bottom:14px;z-index:2;
+  background:rgba(255,255,255,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  border-radius:100px;padding:9px 16px;font-size:.78rem;font-weight:500;
+  box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:8px;
+  border:1px solid var(--line);
+}
+.map-note svg{width:14px;height:14px;color:var(--accent-dark)}
+
+/* ============ CTA BANNER ============ */
+.cta{
+  background:
+    linear-gradient(rgba(18,17,22,.86),rgba(18,17,22,.86)),
+    url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&q=80') center/cover fixed,
+    #1a1820;
+  color:#fff;text-align:center;padding:clamp(70px,10vw,120px) 0;
+}
+.cta h2{color:#fff;margin-bottom:18px}
+.cta p{color:rgba(255,255,255,.75);max-width:52ch;margin:0 auto 34px}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* ============ FOOTER ============ */
+.footer{background:var(--cream);border-top:1px solid var(--line);padding:56px 0 30px}
+.footer-top{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;
+  padding-bottom:36px;border-bottom:1px solid var(--line);
+}
+.footer h4{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;margin-bottom:16px;
+}
+.footer ul{display:grid;gap:10px}
+.footer ul a,.footer ul li,.footer p{font-size:.9rem;color:var(--ink-soft);line-height:1.6}
+.footer ul a:hover{color:var(--accent-dark)}
+.footer-brand p{margin-top:14px;max-width:38ch;color:var(--muted);font-size:.9rem}
+.footer-bottom{
+  padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:.8rem;color:var(--muted);
+}
+
+/* ============ FLOATING ACTIONS ============ */
+.float-stack{
+  position:fixed;right:18px;bottom:18px;z-index:90;
+  display:flex;flex-direction:column;gap:10px;align-items:flex-end;
+}
+.fab{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:14px 22px;border-radius:100px;
+  font-size:.85rem;font-weight:600;
+  box-shadow:0 14px 34px -12px rgba(0,0,0,.5);
+  transition:transform .3s ease,box-shadow .3s ease,opacity .3s ease,visibility .3s;
+  white-space:nowrap;
+}
+.fab:hover{transform:translateY(-3px)}
+.fab svg{width:17px;height:17px;flex:none}
+.fab-wa{background:#25D366;color:#fff}
+.fab-wa:hover{box-shadow:0 18px 40px -12px rgba(37,211,102,.65)}
+.fab-call{background:var(--ink);color:var(--cream);display:none}
+.fab-top{
+  width:46px;height:46px;padding:0;justify-content:center;border-radius:50%;
+  background:var(--white);color:var(--ink);border:1px solid var(--line);
+  opacity:0;visibility:hidden;
+}
+.fab-top.show{opacity:1;visibility:visible}
+.fab-top svg{width:18px;height:18px}
+
+/* ============ REVEAL ANIMATION ============ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.6,.2,1),transform .8s cubic-bezier(.2,.6,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  .cta{background-attachment:scroll}
+  *{animation-duration:.01ms !important;transition-duration:.01ms !important}
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1024px){
+  .nav-links{display:none}
+  .nav-phone{display:none}
+  .burger{display:flex}
+  .about-grid{grid-template-columns:1fr}
+  .about-media img{max-height:420px}
+  .about-media .badge{left:18px}
+  .visit-grid{grid-template-columns:1fr}
+  .enquiry-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
+  .strip-grid{grid-template-columns:1fr}
+  .strip-item{border-right:0;border-bottom:1px solid rgba(255,255,255,.1)}
+  .strip-item:last-child{border-bottom:0}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .fab-call{display:inline-flex}
+}
+@media (max-width:640px){
+  .hero{min-height:auto;padding:120px 0 80px}
+  .hero-actions .btn{flex:1 1 auto}
+  .hero-rating{gap:10px;padding:11px 16px}
+  .hero-rating .sep{display:none}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:10px}
+  .g-item.wide{grid-column:span 2}
+  .review-head{flex-direction:column;align-items:flex-start}
+  .score-big{font-size:3.4rem}
+  .footer-top{grid-template-columns:1fr;gap:28px}
+  .visit-actions .btn{flex:1 1 auto}
+  .cta-actions .btn{flex:1 1 auto}
+  .cta{background-attachment:scroll}
+  .float-stack{right:14px;bottom:14px}
+  .fab{padding:13px 18px;font-size:.82rem}
+  .about-media .badge{left:14px;bottom:18px;padding:14px 18px}
+  .about-media .badge .n{font-size:1.5rem}
+}
+@media (max-width:380px){
+  .gallery-grid{grid-template-columns:1fr}
+  .g-item.wide{grid-column:span 1}
+  .g-item.tall{grid-row:span 1}
+}
+@media print{
+  .header,.float-stack,.drawer,.map-frame{display:none !important}
+  body{background:#fff}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="The Clothing Store home">
+      <span class="brand-mark">TC</span>
+      <span class="brand-text">
+        <span class="brand-name">The Clothing Store</span>
+        <span class="brand-sub">Samana · Punjab</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#about" data-nav>About</a>
+      <a href="#why" data-nav>Why Us</a>
+      <a href="#gallery" data-nav>Gallery</a>
+      <a href="#reviews" data-nav>Reviews</a>
+      <a href="#enquiry" data-nav>Enquiry</a>
+      <a href="#visit" data-nav>Visit</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+919779890015">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        097798 90015
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= MOBILE DRAWER ================= -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#why">Why Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#enquiry">Enquiry</a>
+    <a href="#visit">Visit Us</a>
+  </nav>
+  <div class="drawer-foot">
+    <a class="btn btn-wa btn-block" href="https://wa.me/919779890015?text=Hi%20The%20Clothing%20Store%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+      WhatsApp Us
+    </a>
+    <a class="btn btn-primary btn-block" href="tel:+919779890015">Call 097798 90015</a>
+    <p>Sekhon Complex, near Tehsil Road,<br>Sekhon Colony, Samana, Punjab 147101</p>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <span class="eyebrow" style="color:#e0b483">Clothing Store · Samana, Punjab</span>
+    <h1>Style that feels<br><em>effortlessly yours.</em></h1>
+    <p>
+      Discover trend-led fashion and dependable quality at The Clothing Store —
+      a neighbourhood favourite in Sekhon Colony, Samana, rated
+      <strong>5.0★</strong> by our customers.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#visit">
+        Visit the Store
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="https://wa.me/919779890015?text=Hi%20The%20Clothing%20Store%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+
+    <div class="hero-rating">
+      <span class="score">5.0</span>
+      <span class="stars" aria-label="5 out of 5 stars">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </span>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="meta">9 Google reviews</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INFO STRIP ================= -->
+<section class="strip" aria-label="Store information">
+  <div class="wrap">
+    <div class="strip-grid">
+      <div class="strip-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div>
+          <div class="k">Location</div>
+          <div class="v">Sekhon Complex, near Tehsil Road,<br>Sekhon Colony, Samana, Punjab 147101</div>
+        </div>
+      </div>
+      <div class="strip-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div>
+          <div class="k">Opening Hours</div>
+          <div class="v"><span class="status-dot" id="dot1"></span><span id="status1">Open now</span> · Closes 9:00 PM</div>
+        </div>
+      </div>
+      <div class="strip-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <div>
+          <div class="k">Call / WhatsApp</div>
+          <a class="v" href="tel:+919779890015">097798 90015</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media reveal">
+      <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80"
+           alt="Racks of clothing inside The Clothing Store" loading="lazy">
+      <div class="badge">
+        <div class="n">5.0★</div>
+        <div class="l">9 Reviews</div>
+      </div>
+    </div>
+
+    <div class="about-copy reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2>A local store with a modern eye for style.</h2>
+      <p class="lede" style="margin-top:18px">
+        The Clothing Store sits at the heart of Sekhon Colony in Samana, Punjab —
+        a welcoming space where shoppers come for fresh, on-trend pieces and leave
+        with something they genuinely love wearing.
+      </p>
+      <p class="lede" style="margin-top:16px">
+        Every customer who has reviewed us gave us five stars. That trust is built on
+        three simple things: styles that feel current, quality you can feel in the fabric,
+        and service that treats you like a neighbour — because you are one.
+      </p>
+
+      <ul class="about-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Curated, trend-forward styles refreshed regularly</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Quality fabrics and finishes chosen to last</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Friendly, unhurried help finding your fit</span>
+        </li>
+      </ul>
+
+      <a class="btn btn-primary" href="#visit" style="margin-top:32px">Plan Your Visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="section features" id="why">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow centered">Why Shop With Us</span>
+      <h2>What our customers keep coming back for</h2>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+        </div>
+        <h3>Trendy Styles</h3>
+        <p>Fresh, contemporary pieces that keep your wardrobe current — without chasing every passing trend.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6z"/></svg>
+        </div>
+        <h3>Quality You Can Feel</h3>
+        <p>Customers consistently highlight the quality of our clothing — good fabric, clean stitching, proper finishing.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Personal Service</h3>
+        <p>We take the time to help you find the right size, the right fit and the right look for the occasion.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Easy to Reach</h3>
+        <p>Right in Sekhon Complex near Tehsil Road, Samana — simple to find, easy to park, open until 9 PM.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In Store</span>
+      <h2>A look inside</h2>
+      <p class="lede" style="margin-top:14px">
+        Browse the rails, feel the fabrics and find your next favourite outfit.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="g-item tall reveal">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80" alt="Clothing store interior" loading="lazy">
+      </figure>
+      <figure class="g-item wide reveal">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="Rack of shirts on display" loading="lazy">
+      </figure>
+      <figure class="g-item reveal">
+        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=80" alt="Folded clothing on shelves" loading="lazy">
+      </figure>
+      <figure class="g-item reveal">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Fashion apparel detail" loading="lazy">
+      </figure>
+      <figure class="g-item wide reveal">
+        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80" alt="Clothes hanging in a row" loading="lazy">
+      </figure>
+      <figure class="g-item reveal">
+        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80" alt="Menswear styling" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="review-head">
+      <div>
+        <span class="eyebrow">Customer Reviews</span>
+        <h2>Loved by our customers</h2>
+        <p class="lede" style="margin-top:14px">
+          Every single review on our Google listing is a five-star review.
+        </p>
+      </div>
+      <div class="score-block">
+        <div class="score-big">5.0</div>
+        <div class="score-meta">
+          <span class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </span>
+          <span>Based on 9 Google reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-grid">
+      <article class="review-card reveal">
+        <div class="stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-quote">“Absolutely best store to visit 🥳 I adore the trendy style available at the store. Will visit again…”</p>
+        <div class="owner-reply">
+          <b>Response from the owner</b>
+          Hi Prabhjot, we are really happy you liked the quality of the pieces you picked up at The Clothing Store. It is great to know our collection hit the mark for you, and we hope to see you back at our shop in Samana soon.
+        </div>
+        <div class="reviewer">
+          <div class="avatar" aria-hidden="true">PK</div>
+          <div>
+            <div class="name">Prabhjot Kaur</div>
+            <div class="when">1 review · a month ago</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-quote">“Best experience.”</p>
+        <div class="reviewer">
+          <div class="avatar" aria-hidden="true">VN</div>
+          <div>
+            <div class="name">VIRK NIWAS</div>
+            <div class="when">5 reviews · 1 photo · a month ago</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-quote">“Nice quality.”</p>
+        <div class="reviewer">
+          <div class="avatar" aria-hidden="true">MG</div>
+          <div>
+            <div class="name">Mani Ghuman</div>
+            <div class="when">1 review · a month ago</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENQUIRY ================= -->
+<section class="section enquiry" id="enquiry">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Get in Touch</span>
+      <h2>Send us an enquiry</h2>
+      <p class="lede" style="margin-top:14px">
+        Looking for a specific style, size or occasion? Send us a message on WhatsApp
+        and we'll get back to you.
+      </p>
+    </div>
+
+    <div class="enquiry-grid">
+      <div class="contact-alt reveal">
+        <a class="alt-card" href="tel:+919779890015">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="t">Call the Store</div>
+            <div class="s">097798 90015 · Mon–Sun, 9 AM – 9 PM</div>
+          </div>
+        </a>
+
+        <a class="alt-card" href="https://wa.me/919779890015?text=Hi%20The%20Clothing%20Store%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">
+          <div class="ico wa">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </div>
+          <div>
+            <div class="t">WhatsApp Us</div>
+            <div class="s">Quick replies during store hours</div>
+          </div>
+        </a>
+
+        <a class="alt-card" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Sekhon+Complex%2C+near+Tehsil+Road%2C+Sekhon+Colony%2C+Samana%2C+Punjab+147101">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="t">Get Directions</div>
+            <div class="s">Sekhon Complex, near Tehsil Road, Samana</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="form-card reveal">
+        <div class="form-success" id="formSuccess" role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Thank you! Your message is ready in WhatsApp — just press send.</span>
+        </div>
+
+        <form id="enquiryForm" novalidate>
+          <div class="field" id="f-name">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Harpreet Singh" autocomplete="name" required>
+            <span class="err">Please enter your name.</span>
+          </div>
+
+          <div class="field" id="f-phone">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 98765 43210" autocomplete="tel" inputmode="tel" required>
+            <span class="err">Please enter a valid phone number.</span>
+          </div>
+
+          <div class="field" id="f-message">
+            <label for="message">What are you looking for?</label>
+            <textarea id="message" name="message" placeholder="Tell us what you're looking for — style, size, colour, occasion…" required></textarea>
+            <span class="err">Please write a short message.</span>
+          </div>
+
+          <button type="submit" class="btn btn-wa btn-block">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Send via WhatsApp
+          </button>
+
+          <p class="form-note">
+            This opens WhatsApp with your message pre-filled. No data is stored on this website.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISIT ================= -->
+<section class="section" id="visit">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow centered">Find Us</span>
+      <h2>Visit The Clothing Store</h2>
+      <p class="lede" style="margin:16px auto 0">
+        We're easy to find in Sekhon Complex, just off Tehsil Road in Samana. Drop in and
+        take a look — no appointment needed.
+      </p>
+    </div>
+
+    <div class="visit-grid">
+      <div class="visit-card reveal">
+        <div class="info-row">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="k">Address</div>
+            <div class="v">Sekhon Complex, near Tehsil Road,<br>Sekhon Colony, Samana, Punjab 147101</div>
+            <div class="sub">Plus code: 5623+47 Samana, Punjab</div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <div>
+            <div class="k">Opening Hours</div>
+            <div class="v"><span class="status-dot" id="dot2"></span><span id="status2">Open now</span> · Closes 9:00 PM</div>
+            <div class="sub">Call ahead to confirm timings on holidays.</div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="k">Phone</div>
+            <a class="v" href="tel:+919779890015">097798 90015</a>
+            <div class="sub">Tap to call from your phone.</div>
+          </div>
+        </div>
+
+        <div class="visit-actions">
+          <a class="btn btn-primary" href="tel:+919779890015">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call the Store
+          </a>
+          <a class="btn btn-outline" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/dir/?api=1&destination=Sekhon+Complex%2C+near+Tehsil+Road%2C+Sekhon+Colony%2C+Samana%2C+Punjab+147101">
+            Get Directions
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="map-frame reveal">
+        <iframe
+          title="Map showing The Clothing Store in Samana, Punjab"
+          src="https://www.google.com/maps?q=Sekhon%20Complex%2C%20near%20Tehsil%20Road%2C%20Sekhon%20Colony%2C%20Samana%2C%20Punjab%20147101&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="map-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Samana, Punjab 147101
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="wrap">
+    <h2>Come find something you'll love.</h2>
+    <p>Trendy styles, quality clothing and a warm welcome — right here in Samana, Punjab.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" style="background:#fff;color:var(--ink)" href="tel:+919779890015">Call 097798 90015</a>
+      <a class="btn btn-wa" href="https://wa.me/919779890015?text=Hi%20The%20Clothing%20Store%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark" style="background:linear-gradient(140deg,var(--accent-dark),var(--accent))">TC</span>
+          <span class="brand-text">
+            <span class="brand-name" style="color:var(--ink)">The Clothing Store</span>
+            <span class="brand-sub" style="color:var(--muted)">Samana · Punjab</span>
+          </span>
+        </a>
+        <p>A local clothing store in Sekhon Colony, Samana — offering trendy styles and quality clothing, rated 5.0★ by our customers.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">Why Shop With Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#enquiry">Send an Enquiry</a></li>
+          <li><a href="#visit">Visit / Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919779890015">097798 90015</a></li>
+          <li>Sekhon Complex, near Tehsil Road,<br>Sekhon Colony, Samana, Punjab 147101</li>
+          <li>Open daily · Closes 9:00 PM</li>
+          <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Sekhon+Complex%2C+near+Tehsil+Road%2C+Sekhon+Colony%2C+Samana%2C+Punjab+147101">Get Directions →</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> The Clothing Store. All rights reserved.</span>
+      <span>5623+47 Samana, Punjab</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING ACTIONS ================= -->
+<div class="float-stack">
+  <a class="fab fab-wa" href="https://wa.me/919779890015?text=Hi%20The%20Clothing%20Store%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    WhatsApp
+  </a>
+  <a class="fab fab-call" href="tel:+919779890015" aria-label="Call the store">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <button class="fab fab-top" id="backTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+</div>
+
+<!-- ================= STRUCTURED DATA (SEO) ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "The Clothing Store",
+  "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
+  "telephone": "+91-97798-90015",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sekhon Complex, near Tehsil Road, Sekhon Colony",
+    "addressLocality": "Samana",
+    "addressRegion": "Punjab",
+    "postalCode": "147101",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:00",
+    "closes": "21:00"
+  }],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "9",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<!-- ================= SCRIPTS ================= -->
+<script>
+(function(){
+  "use strict";
+
+  var PHONE = "919779890015";
+
+  /* ---- Current year ---- */
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---- Header scroll state + back-to-top visibility ---- */
+  var header = document.getElementById('header');
+  var backTop = document.getElementById('backTop');
+
+  function onScroll(){
+    if (window.scrollY > 40) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+
+    if (backTop){
+      if (window.scrollY > 600) backTop.classList.add('show');
+      else backTop.classList.remove('show');
+    }
+  }
+
+  /* ---- Mobile drawer ---- */
+  var burger = document.getElementById('burger');
+  var drawer = document.getElementById('drawer');
+
+  function openDrawer(){
+    drawer.classList.add('open');
+    burger.classList.add('open');
+    burger.setAttribute('aria-expanded','true');
+    document.body.classList.add('locked');
+  }
+  function closeDrawer(){
+    drawer.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded','false');
+    document.body.classList.remove('locked');
+  }
+  function toggleDrawer(){
+    if (drawer.classList.contains('open')) closeDrawer();
+    else openDrawer();
+  }
+
+  burger.addEventListener('click', toggleDrawer);
+
+  Array.prototype.forEach.call(drawer.querySelectorAll('a'), function(a){
+    a.addEventListener('click', closeDrawer);
+  });
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && drawer.classList.contains('open')){
+      closeDrawer();
+      burger.focus();
+    }
+  });
+
+  var resizeTimer;
+  window.addEventListener('resize', function(){
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function(){
+      if (window.innerWidth > 1024 && drawer.classList.contains('open')) closeDrawer();
+    }, 150);
+  });
+
+  /* ---- Scroll reveal ---- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.1, rootMargin:'0px 0px -50px 0px'});
+
+    Array.prototype.forEach.call(revealEls, function(el, i){
+      el.style.transitionDelay = (Math.min(i % 4, 3) * 80) + 'ms';
+      io.observe(el);
+    });
+  } else {
+    Array.prototype.forEach.call(revealEls, function(el){ el.classList.add('visible'); });
+  }
+
+  /* ---- Scroll spy (active nav) ---- */
+  var navAnchors = document.querySelectorAll('[data-nav]');
+  var sections = [];
+  Array.prototype.forEach.call(navAnchors, function(a){
+    var id = a.getAttribute('href').slice(1);
+    var sec = document.getElementById(id);
+    if (sec) sections.push({ link: a, el: sec });
+  });
+
+  function updateActiveNav(){
+    var pos = window.scrollY + 140;
+    var current = null;
+    sections.forEach(function(s){
+      if (s.el.offsetTop <= pos) current = s;
+    });
+    Array.prototype.forEach.call(navAnchors, function(a){ a.classList.remove('active'); });
+    if (current) current.link.classList.add('active');
+  }
+
+  /* ---- Back to top ---- */
+  if (backTop){
+    backTop.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ---- Open / Closed status (9:00 AM – 9:00 PM daily) ---- */
+  var OPEN_MIN = 9 * 60;
+  var CLOSE_MIN = 21 * 60;
+
+  function updateStatus(){
+    var now = new Date();
+    var minutesNow = now.getHours() * 60 + now.getMinutes();
+    var isOpen = minutesNow >= OPEN_MIN && minutesNow < CLOSE_MIN;
+
+    var text = isOpen ? 'Open now' : 'Closed now';
+    ['status1','status2'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (el) el.textContent = text;
+    });
+    ['dot1','dot2'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (el) el.classList.toggle('closed', !isOpen);
+    });
+  }
+  updateStatus();
+  setInterval(updateStatus, 60000);
+
+  /* ---- Enquiry form → WhatsApp ---- */
+  var form = document.getElementById('enquiryForm');
+  var successBox = document.getElementById('formSuccess');
+
+  function setError(fieldId, hasError){
+    var f = document.getElementById(fieldId);
+    if (f) f.classList.toggle('error', hasError);
+  }
+
+  function isValidPhone(v){
+    var digits = v.replace(/\D/g, '');
+    return digits.length >= 10 && digits.length <= 13;
+  }
+
+  if (form){
+    ['name','phone','message'].forEach(function(id){
+      var input = document.getElementById(id);
+      if (!input) return;
+      input.addEventListener('input', function(){
+        setError('f-' + id, false);
+        if (successBox) successBox.classList.remove('show');
+      });
+    });
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      var nameEl = document.getElementById('name');
+      var phoneEl = document.getElementById('phone');
+      var msgEl = document.getElementById('message');
+
+      var name = nameEl.value.trim();
+      var phone = phoneEl.value.trim();
+      var message = msgEl.value.trim();
+
+      var hasError = false;
+
+      if (name.length < 2) { setError('f-name', true); hasError = true; }
+      if (!isValidPhone(phone)) { setError('f-phone', true); hasError = true; }
+      if (message.length < 5) { setError('f-message', true); hasError = true; }
+
+      if (hasError){
+        var firstError = form.querySelector('.field.error input, .field.error textarea');
+        if (firstError) firstError.focus();
+        return;
+      }
+
+      var text =
+        "New enquiry — The Clothing Store\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n\n" +
+        "Message:\n" + message;
+
+      var url = "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(text);
+      window.open(url, '_blank', 'noopener');
+
+      if (successBox){
+        successBox.classList.add('show');
+        successBox.scrollIntoView({ behavior:'smooth', block:'center' });
+      }
+      form.reset();
+    });
+  }
+
+  /* ---- Smooth scroll with header offset ---- */
+  Array.prototype.forEach.call(document.querySelectorAll('a[href^="#"]'), function(a){
+    a.addEventListener('click', function(e){
+      var href = a.getAttribute('href');
+      if (href === '#' || href === '#top') return;
+      var target = document.getElementById(href.slice(1));
+      if (!target) return;
+      e.preventDefault();
+      var offset = header.offsetHeight + 12;
+      var top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+      if (history.replaceState) history.replaceState(null, '', href);
+    });
+  });
+
+  /* ---- Scroll listener (rAF throttle) ---- */
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if (!ticking){
+      window.requestAnimationFrame(function(){
+        onScroll();
+        updateActiveNav();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  onScroll();
+  updateActiveNav();
+
+})();
+</script>
+</body>
+</html>
